@@ -1,0 +1,229 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+body {
+  background: #e8dfd6;
+}
+
+header {
+  height: 8vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+.subtitle {
+  height: auto;
+}
+
+.subtitle h2 {
+  background: #2c4e73;
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.subtitle h3 {
+  background: #65b2ac;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+section {
+  min-height: 82vh;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #fefefe;
+}
+
+.cta {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 20px; */
+  padding: 1rem;
+}
+
+.cta a {
+  text-decoration: none;
+}
+
+.cta button {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cta-whatsapp button {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+}
+
+.cta-whatsapp button:hover {
+  background-color: #128c7e;
+}
+
+.cta-maps button {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-maps button:hover {
+  background-color: #1967d2;
+}
+
+.cta img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.footer-copyright {
+  font-size: 10px;
+  color: #aaa;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header img {
+    width: 140px;
+  }
+
+  .subtitle h2 {
+    font-size: 1.5rem;
+  }
+  .subtitle h3 {
+    font-size: 1rem;
+  }
+
+  .slide img {
+    max-height: 82vh;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(1) img {
+    content: url("/images/principal1.png");
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .slide:nth-child(2) img {
+    content: url("/images/productos1.png");
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide:nth-child(3) img {
+    content: url("/images/comodidad1.png");
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+}
